@@ -38,25 +38,66 @@
 
     <main>
 
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Understood</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div id="carouselExample" class="carousel slide">
 
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              </div>
-              
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+
             <div class="carousel-inner">
                 <div class="carousel-item active c-item">
-                    <img src="assets/img/pexels-visit-greenland-108649-360912.jpg" class="d-block w-100 c-img" alt="...">
+                    <img src="assets/img/pexels-visit-greenland-108649-360912.jpg" class="d-block w-100 c-img"
+                        alt="...">
+                    <div class="carousel-caption top-0 mt-4 d-none d-sm-block">
+                        <p class="fs-4 mt-5 text-capitalize">Discover the hidden world</p>
+                        <h1 class="display-3 fw-bolder text-capitalize mt-5">The Aurora Tours</h1>
+                        <button type="button" class="btn btn-primary mt-5 px-4 py-2 fs-5" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">Book a tour</button>
+                    </div>
                 </div>
-                <div class="carousel-item c-item" >
+                <div class="carousel-item c-item">
                     <img src="assets/img/pexels-tobiasbjorkli-11180714.jpg" class="d-block w-100 c-img" alt="...">
+                    <div class="carousel-caption top-0 mt-4 d-none d-sm-block">
+                        <p class="fs-4 mt-5 text-capitalize">Discover the hidden world</p>
+                        <h1 class="display-3 fw-bolder text-capitalize mt-5">The Aurora Tours</h1>
+                        <button type="button" class="btn btn-primary mt-5 px-4 py-2 fs-5">Book a tour</button>
+                    </div>
                 </div>
                 <div class="carousel-item c-item">
                     <img src="assets/img/pexels-76505838-8601964.jpg" class="d-block w-100 c-img" alt="...">
+                    <div class="carousel-caption top-0 mt-4 d-none d-sm-block">
+                        <p class="fs-4 mt-5 text-capitalize">Discover the hidden world</p>
+                        <h1 class="display-3 fw-bolder text-capitalize mt-5">The Aurora Tours</h1>
+                        <button type="button" class="btn btn-primary mt-5 px-4 py-2 fs-5">Book a tour</button>
+                    </div>
                 </div>
             </div>
+
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
@@ -65,7 +106,10 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
+
         </div>
+
+
     </main>
 
 

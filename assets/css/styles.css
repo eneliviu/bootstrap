@@ -1,3 +1,38 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.header{
+    background-color: rgb(82, 77, 70);
+    height: 60px;
+}
+
+.main{
+    flex: 1;
+    background-color: aqua;
+}
+
+.sidebar{
+    width: 280px;
+    background-color: blue;
+    flex: 1;
+}
+
+.footer{
+    background-color: blueviolet;
+    height: 40px;
+}
+
 .c-item{
     height:480px;
 }
